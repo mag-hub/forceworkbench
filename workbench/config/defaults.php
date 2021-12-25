@@ -925,7 +925,7 @@ $config["header_Performance"] = array(
     $config["oauthRequired"] = array(
         "label" => "Require OAuth Login",
         "description" => "Require OAuth Login",
-        "default" => false,
+        "default" => true,
         "overrideable" => false,
         "dataType" => "boolean"
     );
