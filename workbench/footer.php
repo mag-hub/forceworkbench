@@ -6,9 +6,9 @@ include_once 'shared.php';
 <div id='disclaimer'><br />
 
 <?php
-if (WorkbenchConfig::get()->value("checkSSL") && !usingSslEndToEnd()) {
-    print "<div style='font-size: 8pt; color: orange;'>WARNING: Unsecure connection detected</div>";
-}
+// if (WorkbenchConfig::get()->value("checkSSL") && !usingSslEndToEnd()) {
+//     print "<div style='font-size: 8pt; color: orange;'>WARNING: Unsecure connection detected</div>";
+// }
 
 if (WorkbenchContext::isEstablished() && WorkbenchContext::get()->isRequestStartTimeSet() && WorkbenchConfig::get()->value("displayRequestTime")) {
     $requestProcessingTime = WorkbenchContext::get()->getRequestProcessingTime();
