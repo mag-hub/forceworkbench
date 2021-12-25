@@ -1,6 +1,6 @@
 <?php
 require_once "shared.php";
-require_once "session.php";
+// require_once "session.php";
 require_once "controllers/LoginController.php";
 
 $c = new LoginController();
@@ -14,7 +14,7 @@ if (isset($_POST['uiLogin'])
     $c->processRequest();
 }
 
-// require_once "header.php";
+require_once "header.php";
 ?>
 
 <p>
