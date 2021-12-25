@@ -112,13 +112,13 @@ if (WorkbenchConfig::get()->value("checkForLatestVersion") && extension_loaded('
             $latestChannelVersion = $latestGaVersion;
             }
 
-        if ($latestChannelVersion != $currentVersion) {
-            print "<div style='background-color: #EAE9E4; width: 100%; padding: 2px;'>" .
-                    "<a href='https://github.com/forceworkbench/forceworkbench/tags' target='_blank' " .
-                        "style='font-size: 8pt; font-weight: bold; color: #0046ad;'>" .
-                        "A newer version of Workbench is available for download</a>" .
-                  "</div><br/>";
-        }
+        // if ($latestChannelVersion != $currentVersion) {
+        //     print "<div style='background-color: #EAE9E4; width: 100%; padding: 2px;'>" .
+        //             "<a href='https://github.com/forceworkbench/forceworkbench/tags' target='_blank' " .
+        //                 "style='font-size: 8pt; font-weight: bold; color: #0046ad;'>" .
+        //                 "A newer version of Workbench is available for download</a>" .
+        //           "</div><br/>";
+        // }
     } catch (Exception $e) {
         //do nothing
     }
